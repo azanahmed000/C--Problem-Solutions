@@ -1,0 +1,66 @@
+//Write an example of multiple class by making two base and one child class.
+#include<iostream>
+
+class parent1
+{
+	public:
+	int a;
+void input()
+{
+	cout<<"Enter the value of a : ";
+	std::cout<<"Enter the value of a : ";
+	std::cin>>a;
+}
+
+void display()
+{
+	std::cout<<"Value of a = "<<a << std::endl;
+}
+};
+class parent2
+{
+	public:
+		int b;
+void input()
+{
+	cout<<"Enter the value of b : ";
+	cin>>b;
+	std::cout<<"Enter the value of b : ";
+	std::cin>>b;
+}
+
+void display()
+{
+	std::cout<<"Value of b = "<<b << std::endl;
+}
+};
+class child:public parent1,public parent2
+{
+	public:
+		int c;
+void input()
+{
+	parent1::input();
+	parent2::input();
+	
+	cout<<"Enter the value of c: ";
+	cin>>c;
+}
+	std::cout<<"Enter the value of c: ";
+	std::cin>>c;
+}
+
+void display()
+{
+	parent1::display();
+	parent2::display();
+	std::cout<<"Value of c = "<<c << std::endl;
+}
+int main()
+{
+	
+	child obj;
+	obj.input();
+	obj.display();
+}
+

@@ -1,0 +1,13 @@
+/*
+Check Palindrome Number
+Determine if a given number is a palindrome using a for loop.
+Example: Input: 121 ? Output: Yes, it is a palindrome 
+*/
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int n;
+	
+	for(int )
+}
